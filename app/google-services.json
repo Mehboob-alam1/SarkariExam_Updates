@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821887788387",
+    "project_id": "all-india-government-job-1d2e5",
+    "storage_bucket": "all-india-government-job-1d2e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821887788387:android:aecf6f043b363e92419f56",
+        "android_client_info": {
+          "package_name": "com.cultofgames.AllIndiaGovernmentJobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821887788387-9ad4bs55i44fvcbpaha79jlm5lkgns3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQAvshVKniX7PZ-y5RJ2rX2DTgsLpcZ1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821887788387-9ad4bs55i44fvcbpaha79jlm5lkgns3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
