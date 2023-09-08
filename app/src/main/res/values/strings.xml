@@ -11,5 +11,7 @@
 
     <string name="privacy">https://bit.ly/DestinyOfShadows</string>
     <string name="login"><u>Login</u></string>
+    <string name="at">\@</string>
+    <string name="passwword_validate_txt">Password must contain a minimum of 8 characters\nPassword must contain at least one symbol e.g. @, !</string>
 
 </resources>

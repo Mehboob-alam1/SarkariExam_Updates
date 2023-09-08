@@ -29,9 +29,9 @@
 
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/space_grotesk_light"
-        android:textStyle="bold"
         android:text="Contact"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,16 +49,297 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView3"
+    >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/_16sdp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+     >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/space_grotesk_light"
+                android:text="Enter user name"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/et_back">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="@string/at" />
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_12sdp"
+                    android:background="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KaranMishra"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp" />
+
+                <TextView
+                    android:id="@+id/txtUserNameAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:text="is not available"
+                    android:textSize="@dimen/_8sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/space_grotesk_light"
+                android:text="Email address"
+                android:textColor="@color/black" />
+
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:hint=" yourname@email.com"
+                android:paddingStart="@dimen/_4sdp"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/et_back" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/space_grotesk_light"
+                android:text="Create password"
+                android:textColor="@color/black" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/et_back"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textSize="@dimen/_12sdp"
+                app:passwordToggleEnabled="true"
+
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/etCreatePassword"
+
+                    android:paddingStart="@dimen/_4sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:background="@null"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:text="@string/passwword_validate_txt"
+                android:textSize="@dimen/_8sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/space_grotesk_light"
+                android:text="Rewrite password"
+                android:textColor="@color/black" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/et_back"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textSize="@dimen/_12sdp"
+                app:passwordToggleEnabled="true"
+
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/etRewritePassword"
+
+                    android:paddingStart="@dimen/_4sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:background="@null"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/space_grotesk_light"
+                android:text="Enter full Name"
+                android:textColor="@color/black" />
 
 
 
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:id="@+id/etFullName"
+                android:hint="Mehboob Alam"
+                android:paddingStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/et_back"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I accept all the"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="terms"
+                android:id="@+id/txtTerms"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/eight"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="and"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_5sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conditions"
+                android:id="@+id/txtConditions"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/eight"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Signup"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already a user ?"
+                android:fontFamily="@font/poppins_semibold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/login"/>
+        </LinearLayout>
     </LinearLayout>
+</ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
